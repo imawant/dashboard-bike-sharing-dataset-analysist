@@ -13,7 +13,7 @@ st.set_page_config(page_title="Capital Bikeshare: Bike-sharing Dashboard",
                    layout="wide")
 
 def create_monthly_users_df(df):
-    monthly_users_df = df.resample(rule='ME', on='dteday').agg({
+    monthly_users_df = df.resample(rule='M', on='dteday').agg({
     "casual": "sum",
     "registered": "sum",
     "cnt": "sum"
