@@ -10,6 +10,14 @@ To install all the required libraries, open your terminal/command prompt/conda p
 pip install -r requirements.txt
 ```
 
+or if you use conda
+
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+
 #### Run Dashboard
 ```bash
 cd dashboard
